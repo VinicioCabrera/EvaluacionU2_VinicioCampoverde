@@ -15,5 +15,11 @@ public class departamentoON implements departamentoONRemote{
 	public void insert(Departamento p) throws Exception{
 		depDAO.insert(p);
 	}
-	
+	public void update(Departamento d) {
+		depDAO.update(d);	
+		}
+	public Departamento read (int id) {
+		
+		return depDAO.read(id);
+		}
 }

@@ -4,6 +4,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+
 import ec.edu.ups.pweb.EvaServidor.model.Departamento;
 
 
@@ -23,10 +24,4 @@ public class departamentoDAO {
 		Departamento d=em.find(Departamento.class, id);
 		return d;
 		}
-	
-	public void actualizar() {
-		
-	}
-	
-
 }
